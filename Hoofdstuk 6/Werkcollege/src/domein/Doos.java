@@ -42,7 +42,8 @@ public class Doos
 		if (waarde <= minWaarde)
 			throw new IllegalArgumentException("Fout in " + afmeting);
 	}
-
+	
+	// getters and setters
 	public final void setLengte(double lengte)
 	{
 		this.controleerAfmeting("lengte", 0, lengte);
