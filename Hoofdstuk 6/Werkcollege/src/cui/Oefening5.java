@@ -14,6 +14,7 @@ public class Oefening5 {
 			System.out.print("Geef de schaal: Celcius [1] of Fahrenheit [2]: ");
 			keuze = inputScanner.nextInt();
 		} while (keuze != 1 && keuze != 2);
+		
 		System.out.printf("Geef de temperatuur in graden (9999 om te stoppen): ");
 		int temp = inputScanner.nextInt();
 		schaal = keuze == 1 ? "Celcius" : "Fahrenheit";
@@ -22,10 +23,12 @@ public class Oefening5 {
 		while (temp != 9999) {
 			String resultaat = geefTemperatuurStatus(temp, schaalletter);
 			System.out.printf("%d graden %s voelt aan als %s%n", temp, schaal, resultaat);
+			
 			do {
 				System.out.print("Geef de schaal: Celcius [1] of Fahrenheit [2]");
 				keuze = inputScanner.nextInt();
 			} while (keuze != 1 && keuze != 2);
+			
 			System.out.printf("Geef de temperatuur in graden %s (9999 om te stoppen): ", schaal);
 			temp = inputScanner.nextInt();
 			schaal = keuze == 1 ? "Celcius" : "Fahrenheit";
