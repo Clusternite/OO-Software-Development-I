@@ -1,11 +1,9 @@
 package domein;
 
 public class Vierkant {
-
 	public static String maakVierkant(int z) {
 		String res = maakVierkant(z, '*');
 		return res;
-
 	}
 
 	public static String maakVierkant(int z, char teken) {
@@ -15,7 +13,6 @@ public class Vierkant {
 				res += teken + " ";
 			}
 			res += "\n";
-
 		}
 		return res;
 	}
